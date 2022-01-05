@@ -4,9 +4,11 @@ const port = 3000
 
 app.get('/', (req, res) => {
     res.send("This is sample NodeJS App.");
-    console.log(process.env);
 });
 
 app.listen(port, () => {
     console.log(`app listening at http://localhost:${port}`)
+    console.log("Environment Variables");
+    console.log("========================");
+    console.log(process.env);
 });
